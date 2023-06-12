@@ -232,6 +232,8 @@ $(document).ready(() => {
                 $(".continue1").fadeOut();
                 $(".continue2").fadeIn();
 
+                $("#Next-1").fadeIn();
+
 
               
 
@@ -255,15 +257,17 @@ $(document).ready(() => {
             });
 
             // clicking on continue2
-            $(".continue2").click(()=>{
+            $("#Next-1").click(()=>{
 
-                $("#first").fadeOut();
-                $("#second").fadeIn();
-
+                
                 let userUnits2 = $(".unit2").find(":selected").val();
                 let userGrade2 = $(".grade2").find(":selected").val();
-            
-
+                
+                $("#first").fadeOut();
+                $("#second").fadeIn();
+                
+                $(".continue2").fadeIn();
+                $("#Next-2").fadeOut();
                    
                 // For a 1 unit course and several grades
                 if(userGrade2 == "A" && userUnits2 == "1")
@@ -420,8 +424,8 @@ $(document).ready(() => {
 
                 let gradePCourse1 = twoCoursegpa;
 
-                $(".continue2").fadeOut();
-                $("#Next-2").fadeIn();
+                // $(".continue2").fadeOut();
+                // $("#Next-2").fadeIn();
 
 
                 
