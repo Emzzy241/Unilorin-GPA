@@ -612,7 +612,140 @@ $(document).ready(() => {
 
             let fourCoursegpa;
 
-            
+               // For a 1 unit course and several grades
+               if (userGrade4 === "A" && userUnits4 === "1") {
+                threeCoursegpa = 1 * 5;
+
+                $(".myThirdResult").text("You had an A in a 1 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "B" && userUnits4 === "1") {
+                threeCoursegpa = 1 * 4;
+
+                $(".myThirdResult").text("You had a B in a 1 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "C" && userUnits4 === "1") {
+                threeCoursegpa = 1 * 3;
+
+                $(".myThirdResult").text("You had a C in a 1 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "D" && userUnits4 === "1") {
+                threeCoursegpa = 1 * 2;
+
+                $(".myThirdResult").text("You had a D in a 1 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "E" && userUnits4 === "1") {
+                threeCoursegpa = 1 * 1;
+
+                $(".myThirdResult").text("You had an E in a 1 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "F" && userUnits4 === "1") {
+                threeCoursegpa = 1 * 0;
+
+                $(".myThirdResult").text("You had an F in a 1 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+
+            // For 2 units now
+
+            else if (userGrade4 === "A" && userUnits4 === "2") {
+                threeCoursegpa = 2 * 5;
+
+                $(".myThirdResult").text("You had an A in a 2 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "B" && userUnits4 === "2") {
+                threeCoursegpa = 2 * 4;
+
+                $(".myThirdResult").text("You had a B in a 2 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "C" && userUnits4 === "2") {
+                threeCoursegpa = 2 * 3;
+
+                $(".myThirdResult").text("You had a C in a 2 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "D" && userUnits4 === "2") {
+                threeCoursegpa = 2 * 2;
+
+                $(".myThirdResult").text("You had a D in a 2 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "E" && userUnits4 === "2") {
+                threeCoursegpa = 2 * 1;
+
+                $(".myThirdResult").text("You had an E in a 2 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "F" && userUnits4 === "2") {
+                threeCoursegpa = 2 * 0;
+
+                $(".myThirdResult").text("You had an E in a 2 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+
+            // For 3 unit courses now
+
+
+            else if (userGrade4 === "A" && userUnits4 === "3") {
+                threeCoursegpa = 3 * 5;
+
+                $(".myThirdResult").text("You had an A in a 3 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "B" && userUnits4 === "3") {
+                threeCoursegpa = 3 * 4;
+
+                $(".myThirdResult").text("You had a B in a 3 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "C" && userUnits4 === "3") {
+                threeCoursegpa = 3 * 3;
+
+                $(".myThirdResult").text("You had a C in a 3 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "D" && userUnits4 === "3") {
+                threeCoursegpa = 3 * 2;
+
+                $(".myThirdResult").text("You had a D in a 3 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "E" && userUnits4 === "3") {
+                threeCoursegpa = 3 * 1;
+
+                $(".myThirdResult").text("You had an E in a 3 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
+            else if (userGrade4 === "F" && userUnits4 === "3") {
+                threeCoursegpa = 3 * 0;
+
+                $(".myThirdResult").text("You had an E in a 3 unit course")
+                $(".myThirdResult2").text("and your grade point per course is: " + threeCoursegpa);
+
+            }
 
 
         });
