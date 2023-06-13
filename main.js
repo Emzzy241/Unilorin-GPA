@@ -6,31 +6,34 @@ $(document).ready(() => {
     $(".8-course").hide();
     $(".9-course").hide();
     $(".10-course").hide();
-    $(".11-course").hide();
+    $("course-11").hide();
     $(".12-course").hide();
     $(".13-course").hide();
 
     $(".amountCourses").click(() => {
+        $(".course-11").fadeIn();
+
+
         let userCourse = $("#myCourses").find(":selected").val();
         console.log(userCourse);
 
-        $("#first").show();
+        // $("#first").show();
 
-        $("#second").hide();
+        // $("#second").hide();
 
-        if (userCourse === "11") {
-            $(".myCoure2").hide();
+        if (userCourse ==== "11") {
+            // $(".myCoure2").hide();
 
             let oneCoursegpa;
             let twoCoursegpa;
 
             $(".course-info").fadeOut();
 
-            $(".11-course").show();
+            $("course-11").show();
             // $(".8-course").hide();
             // $(".9-course").hide();
             // $(".10-course").hide();
-            // $(".11-course").hide();
+            // $("course-11").hide();
             // $(".12-course").hide();
             // $(".13-course").hide();
 
@@ -75,7 +78,7 @@ $(document).ready(() => {
 
                 
                 // For a 1 unit course and several grades
-                if(userGrade1 == "A" && userUnits1 == "1")
+                if(userGrade1 === "A" && userUnits1 === "1")
                 {
                     oneCoursegpa = 1 * 5;
 
@@ -83,7 +86,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
                  
                 }
-                else if(userGrade1 == "B" && userUnits1 == "1")
+                else if(userGrade1 === "B" && userUnits1 === "1")
                 {
                     oneCoursegpa = 1 * 4;
 
@@ -91,7 +94,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "C" && userUnits1 == "1")
+                else if(userGrade1 === "C" && userUnits1 === "1")
                 {
                     oneCoursegpa = 1 * 3;
 
@@ -99,7 +102,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "D" && userUnits1 == "1")
+                else if(userGrade1 === "D" && userUnits1 === "1")
                 {
                     oneCoursegpa = 1 * 2;
 
@@ -107,7 +110,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "E" && userUnits1 == "1")
+                else if(userGrade1 === "E" && userUnits1 === "1")
                 {
                     oneCoursegpa = 1 * 1;
 
@@ -115,7 +118,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "F" && userUnits1 == "1")
+                else if(userGrade1 === "F" && userUnits1 === "1")
                 {
                     oneCoursegpa = 1 * 0;
 
@@ -126,7 +129,7 @@ $(document).ready(() => {
 
                 // For 2 units now
 
-                if(userGrade1 == "A" && userUnits1 == "2")
+                if(userGrade1 === "A" && userUnits1 === "2")
                 {
                     oneCoursegpa = 2 * 5;
 
@@ -134,7 +137,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
                  
                 }
-                else if(userGrade1 == "B" && userUnits1 == "2")
+                else if(userGrade1 === "B" && userUnits1 === "2")
                 {
                     oneCoursegpa = 2 * 4;
 
@@ -142,7 +145,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "C" && userUnits1 == "2")
+                else if(userGrade1 === "C" && userUnits1 === "2")
                 {
                     oneCoursegpa = 2 * 3;
 
@@ -150,7 +153,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "D" && userUnits1 == "2")
+                else if(userGrade1 === "D" && userUnits1 === "2")
                 {
                     oneCoursegpa = 2 * 2;
 
@@ -158,7 +161,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "E" && userUnits1 == "2")
+                else if(userGrade1 === "E" && userUnits1 === "2")
                 {
                     oneCoursegpa = 2 * 1;
 
@@ -166,7 +169,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "F" && userUnits1 == "2")
+                else if(userGrade1 === "F" && userUnits1 === "2")
                 {
                     oneCoursegpa = 2 * 0;
 
@@ -178,7 +181,7 @@ $(document).ready(() => {
                 // For 3 unit courses now
 
                 
-                if(userGrade1 == "A" && userUnits1 == "3")
+                if(userGrade1 === "A" && userUnits1 === "3")
                 {
                     oneCoursegpa = 3 * 5;
 
@@ -186,7 +189,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
                  
                 }
-                else if(userGrade1 == "B" && userUnits1 == "3")
+                else if(userGrade1 === "B" && userUnits1 === "3")
                 {
                     oneCoursegpa = 3 * 4;
 
@@ -194,7 +197,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "C" && userUnits1 == "3")
+                else if(userGrade1 === "C" && userUnits1 === "3")
                 {
                     oneCoursegpa = 3 * 3;
 
@@ -202,7 +205,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "D" && userUnits1 == "3")
+                else if(userGrade1 === "D" && userUnits1 === "3")
                 {
                     oneCoursegpa = 3 * 2;
 
@@ -210,7 +213,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "E" && userUnits1 == "3")
+                else if(userGrade1 === "E" && userUnits1 === "3")
                 {
                     oneCoursegpa = 3 * 1;
 
@@ -218,7 +221,7 @@ $(document).ready(() => {
                     $(".myResult2").text("and your grade point per course is: " + oneCoursegpa);
 
                 }
-                else if(userGrade1 == "F" && userUnits1 == "3")
+                else if(userGrade1 === "F" && userUnits1 === "3")
                 {
                     oneCoursegpa = 3 * 0;
 
@@ -229,10 +232,10 @@ $(document).ready(() => {
 
                 let gradePCourse1 = oneCoursegpa;
 
-                $(".continue1").fadeOut();
-                $(".continue2").fadeIn();
+                // $(".continue1").fadeOut();
+                // $(".continue2").fadeIn();
 
-                $("#Next-1").fadeIn();
+                // $("#Next-1").fadeIn();
 
 
               
@@ -263,14 +266,14 @@ $(document).ready(() => {
                 let userUnits2 = $(".unit2").find(":selected").val();
                 let userGrade2 = $(".grade2").find(":selected").val();
                 
-                $("#first").fadeOut();
-                $("#second").fadeIn();
+                // $("#first").fadeOut();
+                // $("#second").fadeIn();
                 
                 $(".continue2").fadeIn();
                 $("#Next-2").fadeOut();
                    
                 // For a 1 unit course and several grades
-                if(userGrade2 == "A" && userUnits2 == "1")
+                if(userGrade2 === "A" && userUnits2 === "1")
                 {
                     twoCoursegpa = 1 * 5;
 
@@ -278,7 +281,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
                  
                 }
-                else if(userGrade2 == "B" && userUnits2 == "1")
+                else if(userGrade2 === "B" && userUnits2 === "1")
                 {
                     twoCoursegpa = 1 * 4;
 
@@ -286,7 +289,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "C" && userUnits2 == "1")
+                else if(userGrade2 === "C" && userUnits2 === "1")
                 {
                     twoCoursegpa = 1 * 3;
 
@@ -294,7 +297,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "D" && userUnits2 == "1")
+                else if(userGrade2 === "D" && userUnits2 === "1")
                 {
                     twoCoursegpa = 1 * 2;
 
@@ -302,7 +305,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "E" && userUnits2 == "1")
+                else if(userGrade2 === "E" && userUnits2 === "1")
                 {
                     twoCoursegpa = 1 * 1;
 
@@ -310,7 +313,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "F" && userUnits2 == "1")
+                else if(userGrade2 === "F" && userUnits2 === "1")
                 {
                     twoCoursegpa = 1 * 0;
 
@@ -321,7 +324,7 @@ $(document).ready(() => {
 
                 // For 2 units now
 
-                if(userGrade2 == "A" && userUnits2 == "2")
+                if(userGrade2 === "A" && userUnits2 === "2")
                 {
                     twoCoursegpa = 2 * 5;
 
@@ -329,7 +332,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
                  
                 }
-                else if(userGrade2 == "B" && userUnits2 == "2")
+                else if(userGrade2 === "B" && userUnits2 === "2")
                 {
                     twoCoursegpa = 2 * 4;
 
@@ -337,7 +340,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "C" && userUnits2 == "2")
+                else if(userGrade2 === "C" && userUnits2 === "2")
                 {
                     twoCoursegpa = 2 * 3;
 
@@ -345,7 +348,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "D" && userUnits2 == "2")
+                else if(userGrade2 === "D" && userUnits2 === "2")
                 {
                     twoCoursegpa = 2 * 2;
 
@@ -353,7 +356,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "E" && userUnits2 == "2")
+                else if(userGrade2 === "E" && userUnits2 === "2")
                 {
                     twoCoursegpa = 2 * 1;
 
@@ -361,7 +364,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "F" && userUnits2 == "2")
+                else if(userGrade2 === "F" && userUnits2 === "2")
                 {
                     twoCoursegpa = 2 * 0;
 
@@ -373,7 +376,7 @@ $(document).ready(() => {
                 // For 3 unit courses now
 
                 
-                if(userGrade2 == "A" && userUnits2 == "3")
+                if(userGrade2 === "A" && userUnits2 === "3")
                 {
                     twoCoursegpa = 3 * 5;
 
@@ -381,7 +384,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
                  
                 }
-                else if(userGrade2 == "B" && userUnits2 == "3")
+                else if(userGrade2 === "B" && userUnits2 === "3")
                 {
                     twoCoursegpa = 3 * 4;
 
@@ -389,7 +392,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "C" && userUnits2 == "3")
+                else if(userGrade2 === "C" && userUnits2 === "3")
                 {
                     twoCoursegpa = 3 * 3;
 
@@ -397,7 +400,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "D" && userUnits2 == "3")
+                else if(userGrade2 === "D" && userUnits2 === "3")
                 {
                     twoCoursegpa = 3 * 2;
 
@@ -405,7 +408,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "E" && userUnits2 == "3")
+                else if(userGrade2 === "E" && userUnits2 === "3")
                 {
                     twoCoursegpa = 3 * 1;
 
@@ -413,7 +416,7 @@ $(document).ready(() => {
                     $(".mySecondResult2").text("and your grade point per course in your second course is: " + twoCoursegpa);
 
                 }
-                else if(userGrade2 == "F" && userUnits2 == "3")
+                else if(userGrade2 === "F" && userUnits2 === "3")
                 {
                     twoCoursegpa = 3 * 0;
 

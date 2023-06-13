@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
     <script src="./jquery-3.6.0.js"></script>
-    <script src="./main.js"></script>
+    <script src="./scripts.js"></script>
 </head>
 
 <body>
@@ -69,19 +69,19 @@
             <p>Please Input the amount of Courses you are offering</p>
             <br>
             <p>100l CSC Students have 11 courses in 1st semester</p>
-            
+
             <select name="courses" id="myCourses" required>
                 <option value="11">11</option>
-               
+
             </select>
-            <button type="submit" class="btn btn-warning amountCourses">Submit</button>
+            <button type="submit" class="btn btn-warning amountCourses">Start Checking</button>
 
         </div>
 
 
         <br>
         <!-- Div for 7 courses -->
-        <div class="11-course">
+        <div class="course-11">
             <br>
             <p>Input the Units and grades for your 11 Courses</p>
             <br>
@@ -104,9 +104,10 @@
                 </select>
                 <br> <br>
 
-                <button class="btn btn-warning continue1">continue</button>
+                <!-- <button class="btn btn-warning continue1">check gpa</button> -->
+                <button class="btn btn-warning check1">check gpa</button>
 
-                <button class="btn btn-warning " id="Next-1">Next Course > </button>
+                <!-- <button class="btn btn-warning " id="Next-1">Next Course > </button> -->
 
 
                 <p class="myResult"></p>
@@ -116,7 +117,7 @@
 
             <br> <br>
 
-            <div class="myCourse2"id="second">
+            <div class="myCourse2" id="second">
                 <h5>Course-2</h5>
                 <select name="myUnits" class="unit2" required>
                     <option value="1">1 unit</option>
@@ -132,17 +133,18 @@
                     <option value="E">Grade E</option>
                     <option value="F">Grade F</option>
                 </select>
+
+                <br>
+
+                <button class="btn btn-warning check2">check gpa</button>
+
+                <p class="mySecondResult"></p>
+                <p class="mySecondResult2"></p>
+
+                <!-- <button class="btn btn-warning " id="Next-2">Next Course > </button> -->
+                <br>
+
             </div>
-
-            <button class="btn btn-warning continue2">continue</button>
-           
-            <p class="mySecondResult"></p>
-            <p class="mySecondResult2"></p>
-
-            <button class="btn btn-warning " id="Next-2">Next Course > </button>
-            <br>
-
-
 
 
 
@@ -150,7 +152,7 @@
         </div>
 
 
-   <br> <br>
+        <br> <br>
         <p>Powered by <b>Dynasty | 09012857304</b></p>
     </div>
 
