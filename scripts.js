@@ -750,6 +750,153 @@ $(document).ready(() => {
 
         });
 
+
+        // checking for the fifth course
+
+        $(".check5").click(()=>{
+            let userUnits5 = $(".unit5").find(":selected").val();
+            let userGrade5 = $(".grade5").find(":selected").val();
+
+            let fifthCoursegpa;
+
+                // For a 1 unit course and several grades
+                if (userGrade5 === "A" && userUnits5 === "1") {
+                    fifthCoursegpa = 1 * 5;
+    
+                    $(".myFifthResult").text("You had an A in a 1 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "B" && userUnits5 === "1") {
+                    fifthCoursegpa = 1 * 4;
+    
+                    $(".myFifthResult").text("You had a B in a 1 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "C" && userUnits5 === "1") {
+                    fifthCoursegpa = 1 * 3;
+    
+                    $(".myFifthResult").text("You had a C in a 1 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "D" && userUnits5 === "1") {
+                    fifthCoursegpa = 1 * 2;
+    
+                    $(".myFifthResult").text("You had a D in a 1 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "E" && userUnits5 === "1") {
+                    fifthCoursegpa = 1 * 1;
+    
+                    $(".myFifthResult").text("You had an E in a 1 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "F" && userUnits5 === "1") {
+                    fifthCoursegpa = 1 * 0;
+    
+                    $(".myFifthResult").text("You had an F in a 1 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+    
+                // For 2 units now
+    
+                else if (userGrade5 === "A" && userUnits5 === "2") {
+                    fifthCoursegpa = 2 * 5;
+    
+                    $(".myFifthResult").text("You had an A in a 2 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "B" && userUnits5 === "2") {
+                    fifthCoursegpa = 2 * 4;
+    
+                    $(".myFifthResult").text("You had a B in a 2 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "C" && userUnits5 === "2") {
+                    fifthCoursegpa = 2 * 3;
+    
+                    $(".myFifthResult").text("You had a C in a 2 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "D" && userUnits5 === "2") {
+                    fifthCoursegpa = 2 * 2;
+    
+                    $(".myFifthResult").text("You had a D in a 2 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "E" && userUnits5 === "2") {
+                    fifthCoursegpa = 2 * 1;
+    
+                    $(".myFifthResult").text("You had an E in a 2 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "F" && userUnits5 === "2") {
+                    fifthCoursegpa = 2 * 0;
+    
+                    $(".myFifthResult").text("You had an E in a 2 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+    
+                // For 3 unit courses now
+    
+    
+                else if (userGrade5 === "A" && userUnits5 === "3") {
+                    fifthCoursegpa = 3 * 5;
+    
+                    $(".myFifthResult").text("You had an A in a 3 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "B" && userUnits5 === "3") {
+                    fifthCoursegpa = 3 * 4;
+    
+                    $(".myFifthResult").text("You had a B in a 3 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "C" && userUnits5 === "3") {
+                    fifthCoursegpa = 3 * 3;
+    
+                    $(".myFifthResult").text("You had a C in a 3 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "D" && userUnits5 === "3") {
+                    fifthCoursegpa = 3 * 2;
+    
+                    $(".myFifthResult").text("You had a D in a 3 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "E" && userUnits5 === "3") {
+                    fifthCoursegpa = 3 * 1;
+    
+                    $(".myFifthResult").text("You had an E in a 3 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+                else if (userGrade5 === "F" && userUnits5 === "3") {
+                    fifthCoursegpa = 3 * 0;
+    
+                    $(".myFifthResult").text("You had an E in a 3 unit course")
+                    $(".myFifthResult2").text("and your grade point per course is: " + fifthCoursegpa);
+    
+                }
+    
+
+        });
+
     });
 });
 
